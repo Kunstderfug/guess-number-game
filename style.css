@@ -14,7 +14,7 @@ body {
   text-align: center;
   background-color: #636e22;
   padding: 2rem;
-  height: 35vh;
+  min-height: 35vh;
   min-width: 30vh;
   max-width: 960px;
 }
