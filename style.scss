@@ -72,7 +72,13 @@ button {
 }
 .startgame {
   color: rgb(231, 177, 0);
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .startgame {
+    font-size: 1.5rem;
+  }
 }
 
 input {
