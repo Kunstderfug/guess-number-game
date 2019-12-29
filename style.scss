@@ -21,7 +21,7 @@ body {
 
 p {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   margin-bottom: 1rem;
 }
@@ -50,6 +50,12 @@ button {
   color: orange;
   text-align: left;
   padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .guesses {
+    font-size: 2rem;
+  }
 }
 
 .border {
