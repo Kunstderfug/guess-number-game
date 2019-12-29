@@ -5,65 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Random number game</title>
-    <style>
-      p {
-        font-size: 1.5rem;
-      }
-      .numberInput {
-        font-size: 2rem;
-      }
-      button {
-        font-size: 1.5rem;
-        padding: 1rem 1.5rem;
-        color: lightblue;
-        background-color: white;
-        border: 1px solid lightblue;
-        transition: all 0.5s ease-in-out;
-      }
-      button:hover {
-        color: white;
-        background-color: lightblue;
-      }
-      .main {
-        text-align: center;
-      }
-      .guesses {
-        color: orange;
-      }
-      .game {
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-      .gameover {
-        color: red;
-      }
-      .startgame {
-        color: green;
-        font-size: 1rem;
-      }
-      .output {
-        padding-left: 2rem;
-      }
-      input::placeholder {
-        text-align: center;
-        color: rgb(190, 190, 190);
-        font-style: italic;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
-      <p>Enter your number here:</p>
-      <input class="numberInput" type="text" placeholder="" />
-      <button>ENTER</button>
-    </div>
-    <div class="output">
-      <p class="guesses">Your guesses (10 left):</p>
-      <div class="game">
-        <p class="gameover"></p>
-        <p class="samenumber"></p>
-        <p class="startgame"></p>
+      <div>
+        <p>Enter your number here:</p>
+        <input
+          class="numberInput"
+          method="post"
+          type="text"
+          placeholder=""
+          required
+        />
+        <button>ENTER</button>
+      </div>
+      <div class="output">
+        <p class="guesses">Your guesses (10 left):</p>
+        <div class="game">
+          <p class="gameover"></p>
+          <p class="samenumber"></p>
+          <p class="startgame"></p>
+        </div>
       </div>
     </div>
     <script src="file.js"></script>

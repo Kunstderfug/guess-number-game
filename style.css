@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #636e22;
+  padding: 2rem;
+  height: 35vh;
+  min-width: 30vh;
+  max-width: 960px;
+}
+
+p {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.numberInput {
+  font-size: 2rem;
+}
+
+button {
+  display: block;
+  width: auto;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: lightblue;
+  background-color: white;
+  border: 1px solid lightblue;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  color: white;
+  background-color: lightblue;
+}
+
+.guesses {
+  margin: 0 auto;
+  width: 100%;
+  color: orange;
+  text-align: left;
+  padding: 1rem;
+}
+
+.border {
+  border: 1px solid orange;
+}
+
+.game {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gameover {
+  color: #ffa977;
+  padding-top: 1rem;
+}
+
+.startgame {
+  color: #e7b100;
+  font-size: 2rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid white;
+  background: #ccd3a8;
+}
+
+input::-webkit-input-placeholder {
+  text-align: center;
+  color: #ff753e;
+  font-style: italic;
+}
+
+input:-ms-input-placeholder {
+  text-align: center;
+  color: #ff753e;
+  font-style: italic;
+}
+
+input::-ms-input-placeholder {
+  text-align: center;
+  color: #ff753e;
+  font-style: italic;
+}
+
+input::placeholder {
+  text-align: center;
+  color: #ff753e;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */

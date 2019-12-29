@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS',
+    sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(99, 110, 34);
+  padding: 2rem;
+  height: 35vh;
+  min-width: 30vh;
+  max-width: 960px;
+}
+
+p {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.numberInput {
+  font-size: 2rem;
+}
+button {
+  display: block;
+  width: auto;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: lightblue;
+  background-color: white;
+  border: 1px solid lightblue;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: white;
+    background-color: lightblue;
+  }
+}
+.guesses {
+  margin: 0 auto;
+  width: 100%;
+  color: orange;
+  text-align: left;
+  padding: 1rem;
+}
+
+.border {
+  border: 1px solid orange;
+}
+.game {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.gameover {
+  color: rgb(255, 169, 119);
+  padding-top: 1rem;
+}
+.startgame {
+  color: rgb(231, 177, 0);
+  font-size: 2rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid white;
+  background: rgb(204, 211, 168);
+  &::placeholder {
+    text-align: center;
+    color: rgb(255, 117, 62);
+    font-style: italic;
+  }
+}

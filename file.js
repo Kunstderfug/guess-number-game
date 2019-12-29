@@ -19,13 +19,13 @@ let guesses = []; //empty for now array of guesses
 
 btnSearch.onclick = function() {
   //this is what will happen when the button is clicked
+  yourGuesses.classList.add('border');
   theSameNumber.textContent = '';
   startGame.textContent = ''; //empty paragraph for starting new game, the text will appear later
 
   let myNumber = Number(input.value); //takes input number and stores it
   guessCount++; //number of guesses increases by 1
-  guesses.push(myNumber);
-  //   console.log(myNumber); //the guess number has been added to the array
+  guesses.push(' ' + myNumber);
 
   yourGuesses.textContent =
     'Your guesses ' + '(' + (10 - guessCount) + ' left): ' + guesses; //prints the number of remaining guesses
@@ -41,9 +41,10 @@ btnSearch.onclick = function() {
       startGame.textContent =
         '👆 Just enter a number if you want to play again 👆';
       input.setAttribute('placeholder', 'YOU WON!');
+      yourGuesses.classList.remove('border');
       gameOver(); //this is the new function which resets the game, see the bottom of the file
     } else if (myNumber == prevNumbers) {
-      console.log('the same number');
+      // console.log('the same number');
       theSameNumber.textContent =
         '🐸 Your memory is a bit short-term, you already entered this number 🐸';
       input.focus();
