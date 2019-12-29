@@ -87,3 +87,9 @@ input {
     font-style: italic;
   }
 }
+
+@media screen and (min-width: 600px) {
+  input {
+    max-width: 50%;
+  }
+}

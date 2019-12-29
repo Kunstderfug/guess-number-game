@@ -113,4 +113,10 @@ input::placeholder {
   color: #ff753e;
   font-style: italic;
 }
+
+@media screen and (min-width: 600px) {
+  input {
+    max-width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
