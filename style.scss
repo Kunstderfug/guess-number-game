@@ -83,8 +83,9 @@ button {
 }
 
 input {
+  display: block;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0.5rem;
   border: 1px solid white;
   background: rgb(204, 211, 168);
@@ -98,6 +99,13 @@ input {
   input {
     max-width: 50%;
   }
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .level {
