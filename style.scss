@@ -14,17 +14,17 @@ body {
   text-align: center;
   background-color: rgb(99, 110, 34);
   padding: 2rem;
-  min-height: 35vh;
+  // min-height: 35vh;
   min-width: 30vh;
   max-width: 960px;
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
 }
 
-p {
-  margin: 0;
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 1rem;
-}
 .numberInput {
   font-size: 2rem;
 }
@@ -34,7 +34,7 @@ button {
   margin: 1rem auto;
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  color: lightblue;
+  color: rgb(99, 110, 34);
   background-color: white;
   border: 1px solid lightblue;
   transition: all 0.5s ease-in-out;
@@ -44,6 +44,7 @@ button {
     background-color: lightblue;
   }
 }
+
 .guesses {
   margin: 0 auto;
   width: 100%;
@@ -90,7 +91,6 @@ input {
   &::placeholder {
     text-align: center;
     color: rgb(255, 117, 62);
-    font-style: italic;
   }
 }
 
@@ -98,4 +98,33 @@ input {
   input {
     max-width: 50%;
   }
+}
+
+.level {
+  display: flex;
+  color: black;
+  p {
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      cursor: pointer;
+      background-color: rgb(99, 110, 34);
+      color: white;
+    }
+  }
+}
+
+.active {
+  background-color: rgb(99, 110, 34);
+  color: white;
+}
+
+.welcome p {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
 }

@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="welcome">
+      <p>Welcome! Please, choose the level below:</p>
+    </div>
+    <div class="level">
+      <p id="easy">EASY</p>
+      <p id="med">MEDIUM</p>
+      <p id="hard">HARD</p>
+      <p id="imp">IMPOSSIBLE</p>
+    </div>
     <div class="main">
-      <div>
-        <p>Enter your number here:</p>
-        <input
-          class="numberInput"
-          method="post"
-          type="text"
-          placeholder=""
-          required
-        />
-        <button>ENTER</button>
-      </div>
+      <p>Enter your number here:</p>
+      <input
+        class="numberInput"
+        method="post"
+        type="text"
+        placeholder=""
+        required
+      />
+      <button>ENTER</button>
       <div class="output">
         <p class="guesses">Your guesses (10 left):</p>
         <div class="game">

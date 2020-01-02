@@ -14,12 +14,11 @@ body {
   text-align: center;
   background-color: #636e22;
   padding: 2rem;
-  min-height: 35vh;
   min-width: 30vh;
   max-width: 960px;
 }
 
-p {
+.main p {
   margin: 0;
   font-size: 1.5rem;
   color: white;
@@ -36,7 +35,7 @@ button {
   margin: 1rem auto;
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  color: lightblue;
+  color: #636e22;
   background-color: white;
   border: 1px solid lightblue;
   -webkit-transition: all 0.5s ease-in-out;
@@ -99,30 +98,59 @@ input {
 input::-webkit-input-placeholder {
   text-align: center;
   color: #ff753e;
-  font-style: italic;
 }
 
 input:-ms-input-placeholder {
   text-align: center;
   color: #ff753e;
-  font-style: italic;
 }
 
 input::-ms-input-placeholder {
   text-align: center;
   color: #ff753e;
-  font-style: italic;
 }
 
 input::placeholder {
   text-align: center;
   color: #ff753e;
-  font-style: italic;
 }
 
 @media screen and (min-width: 600px) {
   input {
     max-width: 50%;
   }
+}
+
+.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+
+.level p {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.level p:hover, .level p:active {
+  cursor: pointer;
+  background-color: #636e22;
+  color: white;
+}
+
+.active {
+  background-color: #636e22;
+  color: white;
+}
+
+.welcome p {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
