@@ -125,7 +125,12 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .level p {

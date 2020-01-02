@@ -102,7 +102,10 @@ input {
 
 .level {
   display: flex;
+  justify-content: center;
   color: black;
+  max-width: 960px;
+  margin: 0 auto;
   p {
     padding: 1rem;
     text-align: center;
